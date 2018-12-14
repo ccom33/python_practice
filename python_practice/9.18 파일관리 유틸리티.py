@@ -1,0 +1,11 @@
+
+f = open("name.txt", "rb")
+f.seek(4,0)
+text=f.read(2)
+print(text)
+f.seek(5,1)
+text=f.read(3)
+print(text)
+f.seek(-4,2)
+text=f.read()
+print(text)
